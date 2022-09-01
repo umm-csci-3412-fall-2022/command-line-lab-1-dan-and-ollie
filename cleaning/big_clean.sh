@@ -9,6 +9,6 @@ grep -r -l "DELETE ME!" "$SCRATCH" | xargs rm
 home=$(pwd)
 
 cd "$SCRATCH"
-
-tar -zcf "$home/cleaned_little_dir" ./*
+based=$(basename $infi)
+tar -zcf "$home/cleaned_$based" ./*
 
